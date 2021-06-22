@@ -1,0 +1,187 @@
+.body{ 
+}
+
+.empr{
+font-family: 'Red Hat Display', sans-serif;
+position: absolute;
+width: 199px;
+height: 58px;
+left: 320px;
+top: 47px;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 28px;
+color: #000000;
+}
+.search{
+    width: 484px;
+    height: 40px;
+    margin-left: 36%;
+    margin-top: 60px;
+    background: rgba(196, 196, 196, 0.52);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+.mail{
+    margin-left: 220px;
+}
+#container{
+    display: grid;
+    width: 60%;
+    height: 450px;
+    padding-left: 20%;
+    padding-top: 2%;
+    grid-template-columns: 20%;
+    grid-column-gap: 35px;
+    justify-content: space-around;
+	grid-template-areas: 
+		"a b c"
+        ;
+    ;
+
+    
+
+}
+
+/*Main*/
+    .main{
+        font-family: 'Red Hat Display', sans-serif;
+        margin-top: 20px;
+    }
+    .hello{
+        background-color:  #00C5B4;
+        height: 139px;
+        padding-top: 1px;
+        padding-left: 12px;
+        width: 770px;
+        border-radius: 5px 5px 5px 5px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+
+
+    }
+    .analytics{
+        background-color:  lightgray;
+        font-family: 'Red Hat Display', sans-serif;
+        padding-bottom: 230px;
+        border-radius: 5px 5px 5px 5px;
+        padding-top: 9px;
+        padding-left: 12px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .up{
+        background-color:  lightgray;
+        width: 770px;
+        height: 230px;
+        padding-top: 9px;
+        padding-left: 12px;
+        border-radius: 5px 5px 5px 5px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+/*Navigation*/
+    .navi{
+        font-family: 'Red Hat Display', sans-serif;
+        background-color: #00C5B4;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 28px;
+        padding-left: 20px;
+        padding-bottom: 330px;
+        margin-top: 20px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .faq{
+        padding-top: 130px;
+    }
+    .icon{
+        
+       margin-right: 15px;
+    }
+
+/*profile*/
+    .userimage{
+        text-align: center;
+        background-color: lightgray;
+        border-radius: 100px;
+        padding: 10px;
+        
+    }
+    .profile{
+        font-family: 'Red Hat Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .dr{
+  
+        text-align: center;
+    }
+    .myprofile{
+        
+    }
+    .today{
+        background-color:  lightgray;
+        width: 230px;
+        height: 70px;
+        border-radius: 5px 5px 5px 5px;
+        padding-top: 9px;
+        padding-left: 7px;
+
+    }
+    .cancelled{
+        background-color:  lightgray;
+        width: 230px;
+        height: 70px;
+        padding-top: 9px;
+        padding-left: 7px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .total{
+        background-color:  lightgray;
+        width: 230px;
+        height: 70px;
+        padding-top: 9px;
+        padding-left: 7px;
+        border-radius: 5px 5px 5px 5px;
+
+    }
+    .noti{
+        background-color:  lightgray;
+        width: 230px;
+        height: 214px;
+        padding-top: 9px;
+        padding-left: 7px;
+        border-radius: 5px 5px 5px 5px;
+
+    }
+
+    /*Footer*/
+    .footer{
+        position: absolute;
+        font-family: 'Red Hat Display', sans-serif;
+        width: 158px;
+        height: 58px;
+        left: 320px;
+        top: 810px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+    }
