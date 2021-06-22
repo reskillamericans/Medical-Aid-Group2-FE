@@ -4,42 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+    </style>
     <link rel="stylesheet" href="Registration.css">
     <title>Registration Page</title>
 </head>
 <body>
+
+    <nav class="logo-container">
+        <span id="logo">
+            <img src="./images/registration-image/Group.svg" height="50px" width="50px">
+        </span>
+        <div>
+        <a class="logo-text" href="#" id="nav-logo">Empr Medical</a>
+    </div>
+    </nav>
+   
     <div class="flex-container">
         <div class="image">
-            <img src="./images/registration-image/Doctor 4.svg" style="width:100%">
+            <img src="./images/registration-image/Doctor 4.svg">
         </div>
 
-        <div class="container">
-            <form action="registration.php">
+            <div class="container">
+                <form action="registration.php">
 
-                <div class="header">
-                    <p>Sign up</p>
-                </div>
+                    <div class="header">
+                        <p>Sign up</p>
+                    </div>
+
+                    <div class="name-container">
+                        <input type="text" class="fname" name="fname" placeholder="First Name" required><br>
+                        <input type="text" class="lname" name="lname" placeholder="Last Name" required><br>
+                    </div>
+
+                    <input type="tel" class="phone" name="phone" placeholder="Phone Number" required><br>
+                    <input type="email" class="email2" name="email2" placeholder="Enter Email Address" required><br>
+                    <input type="password" class="cpwd" name="cpwd" placeholder="Create a Password" required>
+                    <div class="pass">
+                        <p>Password must be between 8-16 characters</p>
+                        <p>Password can include the following: numbers, letters, !, ., #.</p><br>
+                    </div>
+                   
+                        <input type="checkbox" class="chkbx" name="chkbx">
+                        <label for="chkbx" style="font-size: 19px;">I agree with Empr Medical's privacy policy.</label><br><br>
+              
 
 
-                <input type="text" class="fname" name="fname" placeholder="First Name" required><br>
-                <input type="text" class="lname" name="lname" placeholder="Last Name" required><br>
-                <input type="tel" class="phone" name="phone" placeholder="Phone Number" required><br>
-                <input type="email" class="email2" name="email2" placeholder="Enter Email Address" required><br>
-                <input type="password" class="cpwd" name="cpwd" placeholder="Create a Password" required>
-                <div class="pass">
-                    <p>Password must be between 8-16 characters</p>
-                    <p>Password can include the following: numbers, letters, !, ., #.</p><br>
-                 </div>
-                <input type="checkbox" class="chkbx" name="chkbx">
-                <label for="chkbx">I agree with Empr Medical's privacy policy.</label><br><br>
-                
+                        <button class="signup">Sign Up</button><br><br><br><br>
+            
+                </form>
+            </div>
+            
+     </div>
 
-
-                    <button class="signup">Sign Up</button><br><br><br><br>
-                </div>
-            </form>
-        </div>
+       
 </div>
    
     
