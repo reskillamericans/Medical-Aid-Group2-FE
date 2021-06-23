@@ -51,7 +51,7 @@
 .lname {
     padding-right: 16px;
 }
-.phone, .email2 {
+.phone, .email2, .cpwd {
     background-color:rgb(245, 241, 241);
     padding-top: 14px;
     padding-bottom: 14px;
@@ -64,19 +64,8 @@
     font-family: 'Red Hat Display', sans-serif;
     font-size: 15px;
 }
-.cpwd {
-    background-color:rgb(245, 241, 241);
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 262px;
-    padding-left: 5px; 
-    margin-bottom: 5px;
-    border: 1px solid;
-    border-color: rgb(223, 222, 222);
-    border-radius: 7px;
-    font-size: 15px;
-}
-.pass {
+
+.pass .check-box{
     font-size: 19px;
 }
  .signup   {
@@ -97,22 +86,24 @@
 @media only screen and (max-width: 375px) {
     .flex-container {
        flex-direction: column;
-       align-items: flex-start;;
+       align-items: flex-start;
+       padding-bottom: 60px;
+    }
+   .flex-container .img {
+       padding: 0px;
     }
     .image {
-        padding-top: 0em;
-        margin-left: -360px;
-       
-        width: 5px;
-
+        padding: 0px;
+        margin-left: -80px;
     }
     .header {
         padding-top: 0vh;
+        padding-right: 46px;
     }
     .name-container {
         /* flex-direction: row; */
         align-items: flex-start;
-        
+        margin-left: 20px;
     }
     
     .fname {
@@ -121,19 +112,28 @@
         padding-right: 20px;
     }
     .lname {
-        padding-right: 10px;
+        padding-right: 6px;
     }
     
-   .email2, .phone  {
+   .email2, .phone, .cpwd {
         padding-right: 190px;
+        margin-left: 15px;
     }
-    .cpwd  {
-        padding-right: 172px;
-    }
-
+   
     .pass {
         font-size: 15px;
         font-weight: 400;
+        margin-left: 17px;
+        text-overflow: clip;
+       
     }
-
+    .check-box {
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+.signup {
+    margin-left: 105px;
+}
+    
  }
