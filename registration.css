@@ -1,56 +1,68 @@
-
-.logo-container {
-    display: flex;
-    align-items: center;
+.img, .a {
+    display: inline;
+    vertical-align: middle;
 }
-#a .nav-logo, .logo-text {
+.text-only {
+    display: inline-block;
+    vertical-align: middle;
+}
+#a .nav-logo, .logo-text {  
     color: black;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
     text-decoration: none;
 }
+/* heading */
+
 .flex-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
-
-.image {
-    padding-top: 4em;
-    padding-left: 200px;
-    padding-right: 200px;
+.img, .doc-img {
+    margin-top: 71px;
+    max-width: 100%;
+    width: 100%;
 }
-.header {
-    padding-top: 5vh;
+.signup-heading  {
+    margin-left: 1em;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
-    padding-bottom: 30px;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 600;
 }
 .name-container {
     display: flex;
-    align-content: center;
-    align-items: center;
+    /* align-content: center;
+    align-items: center;  */
+    font-family: 'Red Hat Display', sans-serif;
 }
-.fname, .lname {
+.fname {
     background-color:rgb(245, 241, 241);
+    padding-left: 5px; 
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 5px; 
+    padding-right: 20px;
+    margin-right: -10px;
     margin-bottom: 20px;
     border: 1px solid;
     border-color: rgb(223, 222, 222);
     border-radius: 7px;
     font-size: 15px;
 }
-.fname {
-    padding-right: 14px;
-    margin-right: 58px;
-}
 .lname {
-    padding-right: 16px;
+    background-color:rgb(245, 241, 241);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 5px; 
+    padding-right: 20px;
+    margin-left: 58px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-color: rgb(223, 222, 222);
+    border-radius: 7px;
+    font-size: 15px;
 }
+
 .phone, .email2, .cpwd {
     background-color:rgb(245, 241, 241);
     padding-top: 14px;
@@ -64,76 +76,68 @@
     font-family: 'Red Hat Display', sans-serif;
     font-size: 15px;
 }
-
-.pass .check-box{
-    font-size: 19px;
+.pass, .check-box{
+    font-size: 20px;
 }
- .signup   {
+ .signup-btn  {
     background-color: rgb(42, 199, 183);
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 12px;
     padding-top: 12px;
     border: none;
-    margin-top: 50px;
-    margin-left: 125px;
+    margin-left: 89px;
     font-size: 14px;
     border-radius: 5%;
     font-weight: bold;
     font-size: 17px;
-  
 }
 @media only screen and (max-width: 375px) {
+    .img, .doc-img {
+        margin-top: -25px;
+        max-width: 60%;
+        width: 100%;
+        padding-left: 70px;
+    } 
+    .signup-heading  {
+        margin-left: 6.5em;
+      
+        font-size: 20px;
+    } 
     .flex-container {
        flex-direction: column;
        align-items: flex-start;
-       padding-bottom: 60px;
+       padding-bottom: 0px;
     }
-   .flex-container .img {
-       padding: 0px;
-    }
-    .image {
-        padding: 0px;
-        margin-left: -80px;
-    }
-    .header {
-        padding-top: 0vh;
-        padding-right: 46px;
-    }
-    .name-container {
-        /* flex-direction: row; */
-        align-items: flex-start;
-        margin-left: 20px;
-    }
-    
-    .fname {
-        margin-right: 15px;
-        /* width: 40%; */
-        padding-right: 20px;
-    }
-    .lname {
-        padding-right: 6px;
-    }
-    
-   .email2, .phone, .cpwd {
-        padding-right: 190px;
-        margin-left: 15px;
-    }
-   
-    .pass {
-        font-size: 15px;
-        font-weight: 400;
-        margin-left: 17px;
-        text-overflow: clip;
-       
-    }
-    .check-box {
+    .container {
+        /* width: 370px; */
+        padding-top: 0px;
         padding-left: 15px;
-        font-size: 15px;
-        font-weight: 400;
+     }
+     .name-container {
+         display: block;
+         flex-direction: row;
+     }
+     .fname {
+         margin-bottom: 10px;
+     }
+    .lname {
+         margin-left: 0px;
+         margin-bottom: 10px;
+     }
+     
+     .phone, .email2, .cpwd {
+         padding-right: 160px;
+         margin-bottom: 10px;
+        
+     }
+     .pass {
+        font-size: 12px;
     }
-.signup {
-    margin-left: 105px;
-}
-    
+    .check-box{
+        font-size: 15px;
+    }
+    .signup-btn  {
+       margin-bottom: 14px;
+    }
  }
